@@ -1,0 +1,71 @@
+html, body{
+    background-color: hsl(0, 0%, 18.82%);
+    font-family: 'Zen Antique Soft', serif !important;
+}
+
+main{
+    background-color: hsl(0, 0%, 18.82%);
+}
+
+nav {
+    background-color: #141414;
+}
+
+.navbar-brand, .nav-item {
+    text-decoration: none;
+    font-size: 25px!important;
+    margin-right: 20px;
+}
+
+nav .navbar-brand, nav .nav-link {
+    color: white;
+}
+
+nav .nav-link:hover, nav .navbar-brand:hover {
+    color: #ec1010;
+}
+
+nav .darkmode button {
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 10%;
+    background-color: #554a4a;
+    transform: translateY(30%);
+}
+
+nav .darkmode i {
+    font-size: 30px;
+    margin: auto;
+    transform: translateY(1px);
+}
+
+.navbar-toggler {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar-toggler span i {
+    transform: translateX(-3px);
+}
+
+.navbar-toggler span {
+    color: white;
+}
+
+button{
+    background-color: #332e2e;
+}
+
+
+
+h1{
+    color: white;
+    text-align: center;
+    
+}
+
+a{
+    color: white;
+}
