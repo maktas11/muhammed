@@ -8,9 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
     <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <title>Bootstrap Test</title>
   </head>
 <body>
@@ -33,7 +33,7 @@
             <a class="nav-link" href="#">About me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">My Grind</a>
+            <a class="nav-link" href="#"> My Experience</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Projects</a>
@@ -51,13 +51,52 @@
     </div>
   </nav>
   <main>
-    <div class="background text-center">
-      <img src="/img/background.png" alt="" height="600PX">
+    <div class="background mx-auto">
+      <img class="background-img w-100 h-auto"src="/img/background.png"  alt="">
     </div>
-    <div class="about-me mt-4">
+    <div class="about-me">
       <h1>about me</h1>
-
-      <p></p>
+    </div>
+    <div class="experience-info mx-auto d-md-flex d-block p-md-4">
+      <div class="experience-tab w-100 ms-auto pt-3 pt-md-0 mb-auto btn-group-vertical">
+        <button class="button-info">
+          <span>
+            personal info
+          </span>
+        </button>
+        <button class="button-hobby">
+          <span>
+            hobby's
+          </span>
+        </button>
+        <button class="button-points">
+          <span>
+            weak/strong points
+          </span>
+        </button>
+      </div>
+      <div class="experience-text me-auto p-2">
+        <div class="experience-tab-text">
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus et accusamus iure minus laborum
+            facilis earum facere molestiae veniam deserunt atque, inventore velit omnis. Ab facilis distinctio
+            obcaecati, labore enim, delectus quam tenetur dignissimos deserunt, accusamus fuga. Sequi, harum aut?
+          </p>
+        </div>
+        <div class="experience-tab-title visually-hidden">
+          <h3>
+            Sint-Maartenscollege Voorburg
+          </h3>
+        </div>
+        <div class="experience-tab-title visually-hidden">
+          <h3>
+            ROC Mondriaan
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div class="Experience">
+      
     </div>
 </main>
   <script src="js/main.js"></script>

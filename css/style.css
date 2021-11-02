@@ -1,6 +1,6 @@
 html, body{
     background-color: hsl(0, 0%, 18.82%);
-    font-family: 'Zen Antique Soft', serif !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 main{
@@ -54,18 +54,53 @@ nav .darkmode i {
     color: white;
 }
 
-button{
-    background-color: #332e2e;
+.background, .background-img{
+    max-width: 1440px;
+    min-width: auto;
 }
-
-
 
 h1{
     color: white;
     text-align: center;
-    
 }
 
 a{
     color: white;
+}
+h3 {
+    font-size: 20px!important;
+    color: white;
+}
+
+p{
+    color: white;
+}
+.experience-tab button {
+    width: 300px;
+    height: 50px;
+    border: 1px solid  #50C878;
+    background-color: #707070;
+}
+
+.experience-tab span {
+    color:  #50C878;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.experience-tab-text {
+    max-width: 300px;
+    min-width: auto;
+}
+
+.experience-tab {
+    max-width: 300px;
+    min-width: auto;
+}
+
+.experience-text {
+    max-width: 300px;
+    min-width: auto;
+    border: 1px solid  #50C878;
+    background-color: #707070;
 }
