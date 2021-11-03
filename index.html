@@ -34,10 +34,10 @@
             <a class="nav-link" href="#exp"> My Experience</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#proj">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#cont">Contact</a>
           </li>
           <div class="darkmode">
             <button>
@@ -96,18 +96,18 @@
     <div  id="exp" class="Experience mt-3">
       <h1>My Experience</h1>
     </div>
-    <div class="d-flex mt-3">
-      <div class="xp ms-auto">
-        <p class="me-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae consequatur officiis soluta obcaecati, nihil facere voluptatibus in, molestiae illum sint tempore nulla vel! Perferendis quia, itaque alias natus possimus blanditiis!</p>
+    <div class="d-sm-flex mt-3">
+      <div class="xp ms-md-auto">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae consequatur officiis soluta obcaecati, nihil facere voluptatibus in, molestiae illum sint tempore nulla vel! Perferendis quia, itaque alias natus possimus blanditiis!</p>
       </div>
-      <div class="me-auto">
-        <img src="img/placeholder.jpg" alt="" height="350px">
+      <div class="mx-auto mx-sm-auto ms-lg-5 mx-md-auto p-lg-0">
+        <img src="img/placeholder.jpg" class="me-auto" alt="" height="350px">
       </div>
     </div>
     <div class="projects mt-4">
       <h1>Projects</h1>
     </div>
-    <div class="project-img text-center">
+    <div id="proj" class="project-img text-center">
       <img src="img/placeholder.png" alt="" class="myBtn">
       <img src="img/placeholder.png" alt="" class="myBtn1 px-3">
       <img src="img/placeholder.png" alt="" class="myBtn2">
@@ -131,6 +131,44 @@
           </div>
       </div>
     </div>
+    <div id="cont" class="contact">
+      <h1>contact</h1>
+    </div>
+    <div class="fcf-body mx-auto">
+      <div id="fcf-form">
+      <h3 class="fcf-h3">Contact us</h3>
+      <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+          <div class="fcf-form-group">
+              <label for="Name" class="fcf-label">Your name</label>
+              <div class="fcf-input-group">
+                  <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+              </div>
+          </div>
+          <div class="fcf-form-group">
+              <label for="Email" class="fcf-label">Your email address</label>
+              <div class="fcf-input-group">
+                  <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+              </div>
+          </div>
+          <div class="fcf-form-group">
+              <label for="Message" class="fcf-label">Your message</label>
+              <div class="fcf-input-group">
+                  <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+              </div>
+          </div>
+          <div class="fcf-form-group">
+              <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+          </div>
+      </form>
+      </div>
+  </div>
+<ul>
+  <li class="text-center links">
+    <a target="blank" href="https://www.linkedin.com/in/muhammed-aktas-487510225/"><i class='bx bxl-linkedin'></i></a>
+    <a target="blank" href="https://twitter.com/aktamuhammed734"><i class='bx bxl-twitter' ></i></a>
+    <a target="blank" href="https://www.instagram.com/aktasmuhammed734/"><i class='bx bxl-instagram' ></i></a>
+  </li>
+</ul>
 </main>
   <script src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
