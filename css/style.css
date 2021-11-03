@@ -3,6 +3,10 @@ html, body{
     font-family: 'Montserrat', sans-serif !important;
     user-select: none;
 }
+.the_body_dark{
+    background-color: rgb(133, 119, 116);
+    color: black;
+}
 
 main{
     background-color: rgb(22, 22, 22);
@@ -74,9 +78,7 @@ ul{
 a{
     color: white;
 }
-.footer{
-    background-color: black;
-}
+
 h3 {
     font-size: 20px!important;
     color: white;
@@ -114,7 +116,9 @@ p{
     border: 2px solid  #ec1010;
     background-color: #707070;
 }
-
+.footer{
+    background-color: black;
+}
 .xp{
     max-width: 300px;
 }

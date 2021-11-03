@@ -3,6 +3,7 @@ const buttonInfo = document.querySelector(".button-info");
 const buttonHobby = document.querySelector(".button-hobby");
 const buttonPoints = document.querySelector(".button-points");
 const text = document.querySelector(".text");
+const theme = document.querySelector(".bx1")
 
 if (buttonInfo) {
     buttonInfo.addEventListener("click", function() {
@@ -19,6 +20,16 @@ if (buttonInfo) {
   if (buttonPoints) {
     buttonPoints.addEventListener("click", function() {
         text.innerHTML = "i do everything imaginable in this universe";
+    })
+}
+if(theme){
+  theme.addEventListener("click", function(){
+        const theBody = document.querySelector(".toggle");
+        const theNav = document.querySelector(".navbar");
+        const theFooter = document.querySelector(".footer");
+        theBody.classList.toggle("the_body_dark");
+        theNav.classList.toggle("the_body_dark");
+        theFooter.classList.toggle("the_body_dark");
     })
 }
 
