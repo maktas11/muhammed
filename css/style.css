@@ -1,11 +1,11 @@
 html, body{
-    background-color: hsl(0, 0%, 18.82%);
+    background-color: rgb(49, 47, 47);
     font-family: 'Montserrat', sans-serif !important;
     user-select: none;
 }
 
 main{
-    background-color: hsl(0, 0%, 18.82%);
+    background-color: rgb(22, 22, 22);
 }
 
 nav {
@@ -68,9 +68,14 @@ h1{
     font-size: 30px;
     margin-right: 50px;
 }
-
+ul{
+    list-style-type: none;
+}
 a{
     color: white;
+}
+.footer{
+    background-color: black;
 }
 h3 {
     font-size: 20px!important;
