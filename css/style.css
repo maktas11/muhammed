@@ -2,9 +2,16 @@ html, body{
     background-color: rgb(49, 47, 47);
     font-family: 'Montserrat', sans-serif !important;
     user-select: none;
+    margin: 0;
+    padding: 0;
+
 }
-.the_body_dark{
-    background-color: rgb(133, 119, 116);
+.light{
+    background-color: rgb(190, 190, 190);
+
+}
+
+.light1{
     color: black;
 }
 
@@ -78,6 +85,7 @@ h1{
 .links{
     font-size: 30px;
     margin-right: 50px;
+    background-color: black;
 }
 ul{
     list-style-type: none;

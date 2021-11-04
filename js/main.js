@@ -4,6 +4,8 @@ const buttonHobby = document.querySelector(".button-hobby");
 const buttonPoints = document.querySelector(".button-points");
 const text = document.querySelector(".text");
 const theme = document.querySelector(".bx1")
+const toggle = document.querySelector(".toggle")
+
 
 if (buttonInfo) {
     buttonInfo.addEventListener("click", function() {
@@ -26,10 +28,12 @@ if(theme){
   theme.addEventListener("click", function(){
         const theBody = document.querySelector(".toggle");
         const theNav = document.querySelector(".navbar");
-        const theFooter = document.querySelector(".footer");
-        theBody.classList.toggle("the_body_dark");
-        theNav.classList.toggle("the_body_dark");
-        theFooter.classList.toggle("the_body_dark");
+        const theFooter = document.querySelector(".links");
+        const theText = document.querySelector(".change");
+        theBody.classList.toggle("light");
+        theNav.classList.toggle("light");
+        theFooter.classList.toggle("light");
+        theText.classList.toggle("light1")
     })
 }
 
@@ -42,7 +46,6 @@ const btn2 = document.querySelector(".myBtn2");
 const span = document.getElementsByClassName("close")[0];
 const span1 = document.getElementsByClassName("close1")[0];
 const span2 = document.getElementsByClassName("close2")[0];
-
 btn.onclick = function() {
   modal.style.display = "block";
 }
