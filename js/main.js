@@ -7,19 +7,19 @@ const theme = document.querySelector(".bx1")
 
 if (buttonInfo) {
     buttonInfo.addEventListener("click", function() {
-        text.innerHTML = "my name is oefewewewe anyetwewewe oegwe moegwe asas";
+        text.innerHTML = "mijn naam is muhammed aktas en ik ben 18 jaar oud. mijn geboorte datum is 7 november 2003. ik leef met een broertje zus moeder en vader.";
     })
 }
 
   if (buttonHobby) {
     buttonHobby.addEventListener("click", function() {
-        text.innerHTML = "im a gamer thats it i do everything that i can";
+        text.innerHTML = "mijn hobby's zijn sporten programmeren en gamen. ik ga vaak naar de gym en ik werk vaak aan mijn huiswerk/portofolio";
     })
 }
 
   if (buttonPoints) {
     buttonPoints.addEventListener("click", function() {
-        text.innerHTML = "i do everything imaginable in this universe";
+        text.innerHTML = "mijn sterke punten zijn dat ik altijd mijn werk af heb en dat ik goed met mensen om kaan gaan/werken. mijn zwakke punten zijn dat ik vaak alles perfect wil en dat ik vaak werk snel af wil.";
     })
 }
 if(theme){
@@ -76,5 +76,13 @@ window.onclick = function(event) {
     modal2.style.display = "none";
   }
 }
-  
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+ document.querySelector(".outputCelcius").innerHTML=(valNum-32)/1.8;
+}
+
+function temperatureConverter2(valNum2) {
+  valNum2 = parseFloat(valNum2);
+  document.querySelector(".outputFarenheit").innerHTML=(valNum2*1.8)+32;
+} 
   

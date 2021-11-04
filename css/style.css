@@ -15,7 +15,13 @@ main{
 nav {
     background-color: #141414;
 }
+.images{
+    text-align: center !important;
+}
 
+h2{
+    color: white;
+}
 .navbar-brand, .nav-item {
     text-decoration: none;
     font-size: 25px!important;
@@ -62,6 +68,7 @@ nav .darkmode i {
 .background, .background-img{
     max-width: 1440px;
     min-width: auto;
+    margin-top: 40px;
 }
 
 h1{
@@ -98,6 +105,7 @@ p{
     color:  white;
     font-size: 20px;
     font-weight: 500;
+    max-width: 300px;
 }
 
 .experience-tab-text {
@@ -113,6 +121,8 @@ p{
 .experience-text {
     max-width: 300px;
     min-width: auto;
+    height: 200px;
+    max-height: 200px;
     border: 2px solid  #ec1010;
     background-color: #707070;
 }
