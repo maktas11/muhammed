@@ -7,7 +7,7 @@ html, body{
 
 }
 .light{
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(190, 190, 190) !important;
 
 }
 
@@ -126,6 +126,10 @@ p{
     min-width: auto;
 }
 
+.inter{
+    
+}
+
 .experience-text {
     max-width: 300px;
     min-width: auto;
@@ -182,6 +186,9 @@ p{
 }
 #fcf-form {
     display:block;
+}
+.contact-every{
+    background-image: url(http://sfwallpaper.com/images/background-stars-2.jpg);
 }
 
 .fcf-body {

@@ -28,7 +28,7 @@ if(theme){
   theme.addEventListener("click", function(){
         const theBody = document.querySelector(".toggle");
         const theNav = document.querySelector(".navbar");
-        const theFooter = document.querySelector(".links");
+        const theFooter = document.querySelector(".footer");
         const theText = document.querySelector(".change");
         theBody.classList.toggle("light");
         theNav.classList.toggle("light");
