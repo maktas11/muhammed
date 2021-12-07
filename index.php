@@ -1,5 +1,7 @@
-
 <?php
+require 'dbconnectie.php';
+require 'Modules/portfolio.php';
+$portofolio = getportfolio();
 echo"
 <!DOCTYPE html>
 <html lang='en'>
@@ -52,10 +54,18 @@ echo"
       </div>
     </div>
   </nav>
-  <main class='toggle'>
-    <div class='background mx-auto '>
-      <img class='background-img w-100 h-auto'src='https://maktas11.github.io/muhammed/img/background.png'  alt=''>
-    </div>
+  ";
+  $portofolio = getportfolio();
+    echo"
+    <main class='toggle'>
+      <div class='background mx-auto '>
+      ";
+      foreach ($portofolio as &$data){
+        echo"
+        <img class='background-img w-100 h-auto'src='" . $data->image . "'  alt=''>
+        ";}
+        echo"
+      </div>
     <div id='me' class='about-me mt-3'>
       <h1>About me</h1>
     </div>
@@ -80,7 +90,7 @@ echo"
       <div class='experience-text mx-md-0 mx-auto me-md-auto p-2'>
         <div class='experience-tab-text'>
           <p class='text'>
-            Mijn naam is muhammed aktas en ik ben 18 jaar oud.
+            Mijn naam is Muhammed Aktas en ik ben 18 jaar oud.
             Mijn geboorte datum is 7 november 2003. Ik leef met een 
             broertje zus moeder en vader.
           </p>
@@ -109,6 +119,7 @@ echo"
       <img src='img/interaction-design.png' alt='' class='myBtn' width='300px'>
       <img src='img/Icoon_rekentool.png' alt='' class='myBtn1 px-5' width='300px'>
       <img src='img/Logo-Health-One.png' alt='' class='myBtn2' width='300px' height='200px'>
+      <img src='img/tictactoe.png' alt='' class='myBtn3' width='300px' height='200px'>
       <div class='myModal modal '>
         <div class='modal-content'>
           <span class='close'>&times;</span>
@@ -159,15 +170,54 @@ echo"
                 oproepen uit een database zoals: namen, plaatjes, descriptions en id's.
               </p>
               <div class='pt-4 mx-auto mx-sm-auto ms-lg-5 mx-md-auto p-lg-0 text-center'>
-                <img src='img/front.PNG' alt='' class='mx-auto'  height='500px' width='900px'>
-                <img src='img/cata.PNG' alt='' class='mx-auto'  height='500px' width='900px'>
-                <img src='img/contact.PNG' alt='' class='mx-auto'  height='500px' width='900px'>
-                <img src='img/local.PNG' alt='' class='mx-auto'  height='500px' width='900px'>
+                <img src='img/front.PNG' alt='' class='inter mx-auto w-100 h-auto'   height='500px' width='900px'>
+                <img src='img/cata.PNG' alt='' class='inter mx-auto w-100 h-auto'   height='500px' width='900px'>
+                <img src='img/contact.PNG' alt='' class='inter mx-auto w-100 h-auto'   height='500px' width='900px'>
+                <img src='img/local.PNG' alt=''class='inter mx-auto w-100 h-auto'   height='500px' width='900px'>
               </div>
             </div>
           </div>
       </div>
     </div>
+  <div class='myModal3 modal'>
+      <div class='modal-content'>
+        <span class='close3 mx-auto'>&times;</span>
+        <h1>Boter kaas en eiren</h1>
+        <p class='inside text-center'>
+          In de eerste klas moesten wij een game maken en wat wij als klas gekozen hadden was boter kaas en eiren.
+        </p>
+      <div class='tictac pt-4 mx-auto mx-sm-auto mx-md-auto p-lg-0 text-center'>
+        <header>
+          <h1>Tic Tac Toe</h1>
+          <span>ofwel boter kaas en eieren</span>
+        </header>
+      <main class='text-center mx-auto'>
+        <div>
+          <p>Player 1</p>
+          <p>Symbol: X</p>
+        </div>
+        <div class='board'>
+          <section class='field field1'></section>
+          <section class='field field2'></section>
+          <section class='field field3'></section>
+          <section class='field field4'></section>
+          <section class='field field5'></section>
+          <section class='field field6'></section>
+          <section class='field field7'></section>
+          <section class='field field8'></section>
+          <section class='field field9'></section>
+        </div>
+        <div>
+          <p>player 2</p>
+          <p>Symbol: O</p>
+        </div>
+      </main>
+      <button class='reset-btn'>reset</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
     <div class='contact-every'>
       <div id='cont' class='contact'>
         <h1>contact</h1>
@@ -201,6 +251,8 @@ echo"
     </div>
     </div>
 </main>
+";
+echo"
 <footer class='footer'>
     <ul class='text-center links my-0'>
       <li>
@@ -216,9 +268,8 @@ echo"
   <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js'
     integrity='sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13'
     crossorigin='anonymous'></script>
-    <script src='js/main.js'></script>
+    <script type='module' src='js/main.js'></script>
 </body>
 </html>
 ";
-
 ?>
