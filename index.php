@@ -120,6 +120,7 @@ echo"
       <img src='img/Icoon_rekentool.png' alt='' class='myBtn1 px-5' width='300px'>
       <img src='img/Logo-Health-One.png' alt='' class='myBtn2' width='300px' height='200px'>
       <img src='img/tictactoe.png' alt='' class='myBtn3' width='300px' height='200px'>
+      <a href='zuzu/index.php'>  <img src='img/sushi.png' alt='' class='myBtn4' width='300px' height='200px'></a>
       <div class='myModal modal '>
         <div class='modal-content'>
           <span class='close'>&times;</span>
